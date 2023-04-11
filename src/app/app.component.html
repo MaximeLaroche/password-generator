@@ -1,0 +1,21 @@
+
+
+<h1>{{ title }}</h1>
+
+<div id="Options" >
+  <h3>Options</h3>
+  <div *ngFor="let option of options">
+    <input type="checkbox" [name]="option.name" [(ngModel)]="option.activated">
+    <label [htmlFor]="option.name">{{option.name}}</label>
+  </div>
+  <div id="lenght">
+    <input type="number" name="lenght" [(ngModel)]="length" (keyup.enter)="generatePassword()">
+    <label for="lenght">Lenght of password</label>
+  </div>
+  <button (click)="generatePassword()">Generate</button>
+</div>
+
+<h4 *ngIf="generated">Votre mot de passe a été copié dans le presse papier!</h4>
+
+   
+<router-outlet></router-outlet>
