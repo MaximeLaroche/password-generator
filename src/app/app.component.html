@@ -6,7 +6,7 @@
   <h3>Options</h3>
   <div *ngFor="let option of options">
     <input type="checkbox" [name]="option.name" [(ngModel)]="option.activated">
-    <label [htmlFor]="option.name">{{option.name}}</label>
+    <label [htmlFor]="option.name">{{option.name}} ({{option.rule}})</label>
   </div>
   <div id="lenght">
     <input type="number" name="lenght" [(ngModel)]="length" (keyup.enter)="generatePassword()">

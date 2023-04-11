@@ -17,8 +17,8 @@ updateLenght($event: Event) {
     { name: 'Nombres', activated: true, rule: '0123456789' },
     { name: 'Lettres', activated: true, rule: 'QWERTYUIOPASDFGHJKLZXCVBNMqwertyuiopasdfghjklzxcvbnm' },
     { name: 'Accents', activated: false, rule: 'êûîôâȩşçëüïöäèùìòàé' },
-    { name: 'Charactètres spécianx standarts', activated: true, rule: '!@[]{}/$%?&*()-=_+' },
-    { name: 'Characte`res spéciaux vraiment standarts', activated: false, rule: '|±@£¢¤¬¦²³¼½¾~µé' }];
+    { name: 'Charactètres spéciaux standarts', activated: true, rule: '!@[]{}/$%?&*()-=_+' },
+    { name: 'Charactères spéciaux non standarts', activated: false, rule: '|±@£¢¤¬¦²³¼½¾~µ' }];
   length: number = 32;
   generated: boolean = false;
   
