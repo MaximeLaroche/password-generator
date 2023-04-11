@@ -18,7 +18,7 @@ updateLenght($event: Event) {
     { name: 'Lettres', activated: true, rule: 'QWERTYUIOPASDFGHJKLZXCVBNMqwertyuiopasdfghjklzxcvbnm' },
     { name: 'Accents', activated: false, rule: 'êûîôâȩşçëüïöäèùìòàé' },
     { name: 'Charactètres spéciaux standarts', activated: true, rule: '!@[]{}/$%?&*()-=_+' },
-    { name: 'Charactères spéciaux non standarts', activated: false, rule: '|±@£¢¤¬¦²³¼½¾~µ' }];
+    { name: 'Charactères spéciaux non standarts', activated: false, rule: '|±@£¢¤¬¦²³¼½¾~µ' }]; 
   length: number = 32;
   generated: boolean = false;
   
